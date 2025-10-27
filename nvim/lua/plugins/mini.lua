@@ -1,26 +1,17 @@
 return {
-  -- Disabled lualine
-  { "nvim-lualine/lualine.nvim", enabled = false },
   {
-    "nvim-mini/mini-git",
-    version = "*",
-    config = function()
-      require("mini.git").setup()
-    end,
-  },
-  {
-    "nvim-mini/mini.diff",
-    version = "*",
-    config = function()
-      require("mini.diff").setup()
-    end,
-  },
-  {
-    "nvim-mini/mini.statusline",
-    version = "*",
-    config = function()
-      require("mini.statusline").setup({})
-    end,
+    "nvim-mini/mini.surround",
+    opts = {
+      mappings = {
+        add = "gsa", -- Add surrounding in Normal and Visual modes
+        delete = "gsd", -- Delete surrounding
+        find = "gsf", -- Find surrounding (to the right)
+        find_left = "gsF", -- Find surrounding (to the left)
+        highlight = "gsh", -- Highlight surrounding
+        replace = "gsr", -- Replace surrounding
+        update_n_lines = "gsn", -- Update `n_lines`
+      },
+    },
   },
   {
     "nvim-mini/mini.pairs",

@@ -3,6 +3,11 @@ return {
     "snacks.nvim",
     opts = {
       scroll = { enabled = false },
+      picker = {
+        layout = {
+          preset = "bottom"
+        }
+      }
     },
   },
   {
@@ -50,7 +55,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox-material",
+      colorscheme = "nord",
     },
   },
 }

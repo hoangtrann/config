@@ -55,5 +55,7 @@ vim.g.lazyvim_picker = "snacks"
 vim.g.lazyvim_python_lsp = "pyright"
 vim.g.lazyvim_python_ruff = "ruff"
 
+vim.g.trouble_lualine = false
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
