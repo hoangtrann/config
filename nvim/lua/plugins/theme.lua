@@ -5,9 +5,9 @@ return {
       scroll = { enabled = false },
       picker = {
         layout = {
-          preset = "bottom"
-        }
-      }
+          preset = "bottom",
+        },
+      },
     },
   },
   {
@@ -40,16 +40,16 @@ return {
     end,
   },
   {
-    "gbprod/nord.nvim",
+    "shaunsingh/nord.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-      require("nord").setup({
-        transparent = false,
-        diff = { mode = "bg" },
-        borders = true,
-        search = { theme = "vim" },
-      })
+      vim.g.nord_contrast = false
+      vim.g.nord_borders = false
+      vim.g.nord_disable_background = false
+      vim.g.nord_italic = false
+      vim.g.nord_uniform_diff_background = true
+      vim.g.nord_bold = false
     end,
   },
   {
@@ -62,7 +62,7 @@ return {
         dim_inactive_windows = false,
         extend_background_behind_borders = true,
       })
-    end
+    end,
   },
   {
     "LazyVim/LazyVim",
