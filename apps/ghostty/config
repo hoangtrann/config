@@ -1,0 +1,16 @@
+theme = Nord
+
+font-size = 14
+font-thicken = true
+font-family = InputMono Nerd Font Mono
+adjust-cell-height = 10% 
+
+cursor-style = block
+cursor-style-blink = false
+shell-integration = zsh
+shell-integration-features = no-cursor,title
+keybind = shift+enter=text:\n
+
+# background-opacity = 0.85
+
+# term=xterm-256color
